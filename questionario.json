@@ -1,0 +1,270 @@
+{
+	"estilodeaprendizagem": {
+		"questoes": [
+			{
+				"estilo": 1,
+				"enunciado": "Eu compreendo melhor alguma coisa depois de",
+				"a": "experimentar.",
+				"b": "refletir sobre ela."
+			},
+			{
+				"estilo": 2,
+				"enunciado": "Eu me considero",
+				"a": "realista.",
+				"b": "inovador(a)."
+			},
+			{
+				"estilo": 3,
+				"enunciado": " Quando eu penso sobre o que fiz ontem, é mais provável que aflorem",
+				"a": "figuras.",
+				"b": "palavras."
+			},
+			{
+				"estilo": 4,
+				"enunciado": "Eu tendo a",
+				"a": "compreender os detalhes de um assunto, mas a estrutura geral pode ficar imprecisa.",
+				"b": "compreender a estrutura geral de um assunto, mas os detalhes podem ficar imprecisos."
+			},
+			{
+				"estilo": 1,
+				"enunciado": "Quando estou aprendendo algum assunto novo, me ajuda",
+				"a": "falar sobre ele.",
+				"b": "refletir sobre ele."
+			},
+			{
+				"estilo": 2,
+				"enunciado": "Se eu fosse um professor, eu preferiria ensinar uma disciplina",
+				"a": "que trate com fatos e situações reais.",
+				"b": "que trate com idéias e teorias."
+			},
+			{
+				"estilo": 3,
+				"enunciado": "Eu prefiro obter novas informações através de",
+				"a": "figuras, diagramas, gráficos ou mapas.",
+				"b": "instruções escritas ou informações verbais."
+			},
+			{
+				"estilo": 4,
+				"enunciado": "Quando eu compreendo",
+				"a": "todas as partes, consigo entender o todo.",
+				"b": "o todo, consigo ver como as partes se encaixam."
+			},
+			{
+				"estilo": 1,
+				"enunciado": "Em um grupo de estudo, trabalhando um material difícil, eu provavelmente",
+				"a": "tomo a iniciativa e contribuo com idéias.",
+				"b": "assumo uma posição discreta e escuto."
+			},
+			{
+				"estilo": 2,
+				"enunciado": "Acho mais fácil",
+				"a": "aprender fatos.",
+				"b": "aprender conceitos."
+			},
+			{
+				"estilo": 3,
+				"enunciado": "Em um livro com uma porção de figuras e desenhos, eu provavelmente",
+				"a": "observo as figuras e desenhos cuidadosamente.",
+				"b": "atento para o texto escrito."
+			},
+			{
+				"estilo": 4,
+				"enunciado": "Quando resolvo problemas de matemática, eu",
+				"a": "usualmente trabalho de maneira a resolver uma etapa de cada vez.",
+				"b": "freqüentemente antevejo as soluções, mas tenho que me esforçar muito para conceber as etapas para chegar a elas."
+			},
+			{
+				"estilo": 1,
+				"enunciado": "Nas disciplinas que cursei eu",
+				"a": "em geral fiz amizade com muitos dos colegas.",
+				"b": "raramente fiz amizade com muitos dos colegas."
+			},
+			{
+				"estilo": 2,
+				"enunciado": "Em literatura de não-ficção, eu prefiro",
+				"a": "algo que me ensine fatos novos ou me indique como fazer alguma coisa.",
+				"b": "algo que me apresente novas idéias para pensar."
+			},
+			{
+				"estilo": 3,
+				"enunciado": "Eu gosto de professores",
+				"a": "que colocam uma porção de diagramas no quadro.",
+				"b": "que gastam bastante tempo explicando."
+			},
+			{
+				"estilo": 4,
+				"enunciado": "Quando estou analisando uma estória ou novela eu",
+				"a": "penso nos incidentes e tento colocá-los juntos para identificar os temas.",
+				"b": "tenho consciência dos temas quando termino a leitura e então tenho que voltar atrás para encontrar os incidentes que os confirmem."
+			},
+			{
+				"estilo": 1,
+				"enunciado": "Quando inicio a resolução de um problema para casa, normalmente eu",
+				"a": "começo a trabalhar imediatamente na solução.",
+				"b": "primeiro tento compreender completamente o problema."
+			},
+			{
+				"estilo": 2,
+				"enunciado": "Prefiro a idéia do",
+				"a": "certo.",
+				"b": "teórico."
+			},
+			{
+				"estilo": 3,
+				"enunciado": "Relembro melhor",
+				"a": "o que vejo.",
+				"b": "o que ouço."
+			},
+			{
+				"estilo": 4,
+				"enunciado": " É mais importante para mim que o professor",
+				"a": "apresente a matéria em etapas seqüências claras.",
+				"b": "apresente um quadro geral e relacione a matéria com outros assuntos."
+			},
+			{
+				"estilo": 1,
+				"enunciado": "Eu prefiro estudar",
+				"a": "em grupo.",
+				"b": "sozinho(a)."
+			},
+			{
+				"estilo": 2,
+				"enunciado": "Eu costumo ser considerado(a)",
+				"a": "cuidadoso(a) com os detalhes do meu trabalho.",
+				"b": "criativo(a) na maneira de realizar meu trabalho."
+			},
+			{
+				"estilo": 3,
+				"enunciado": "Quando busco orientação para chegar a um lugar desconhecido, eu prefiro",
+				"a": "um mapa.",
+				"b": "instruções por escrito."
+			},
+			{
+				"estilo": 4,
+				"enunciado": "Eu aprendo",
+				"a": "num ritmo bastante regular. Se estudar pesado, eu \"chego lá\".",
+				"b": "em saltos. Fico totalmente confuso(a) por algum tempo, e então, repentinamente eu tenho um \"estalo\"."
+			},
+			{
+				"estilo": 1,
+				"enunciado": "Eu prefiro primeiro",
+				"a": "experimentar as coisas.",
+				"b": "pensar sobre como é que eu vou fazer."
+			},
+			{
+				"estilo": 2,
+				"enunciado": "Quando estou lendo como lazer, eu prefiro escritores que",
+				"a": "explicitem claramente o que querem dizer.",
+				"b": "dizem as coisas de maneira criativa, interessante."
+			},
+			{
+				"estilo": 3,
+				"enunciado": "Quando vejo um diagrama ou esquema em uma aula. Relembro mais facilmente",
+				"a": "a figura.",
+				"b": "o que o(a) professor(a) disse a respeito dela."
+			},
+			{
+				"estilo": 4,
+				"enunciado": "Quando considero um conjunto de informações, provavelmente eu",
+				"a": "presto mais atenção nos detalhes e não percebo o quadro geral.",
+				"b": "procuro compreender o quadro geral antes de atentar para os detalhes."
+			},
+			{
+				"estilo": 1,
+				"enunciado": "Relembro mais facilmente.",
+				"a": "algo que fiz.",
+				"b": "algo sobre o que pensei bastante."
+			},
+			{
+				"estilo": 2,
+				"enunciado": "Quando tenho uma tarefa para executar, eu prefiro",
+				"a": "dominar uma maneira para a execução da tarefa.",
+				"b": "encontrar novas maneiras para a execução da tarefa."
+			},
+			{
+				"estilo": 3,
+				"enunciado": "Quando alguém está me mostrando dados, eu prefiro",
+				"a": "diagramas e gráficos.",
+				"b": "texto sumarizando os resultados."
+			},
+			{
+				"estilo": 4,
+				"enunciado": "Quando escrevo um texto, eu prefiro trabalhar (pensar a respeito ou escrever)",
+				"a": "a parte inicial do texto e avançar ordenadamente.",
+				"b": "diferentes partes do texto e ordená-las depois."
+			},
+			{
+				"estilo": 1,
+				"enunciado": "Quando tenho que trabalhar em um projeto em grupo, eu prefiro que se faça primeiro",
+				"a": "um debate (brainstorming) em grupo, onde todos contribuem com idéias.",
+				"b": "um brainstorming individual, seguido de reunião do grupo para comparar idéias."
+			},
+			{
+				"estilo": 2,
+				"enunciado": "Considero um elogia chamar alguém de",
+				"a": "sensível.",
+				"b": "imaginativo."
+			},
+			{
+				"estilo": 3,
+				"enunciado": "Das pessoas que conheço em uma festa, provavelmente eu me recordo melhor",
+				"a": "de sua aparência.",
+				"b": "do que elas disseram de si mesmas."
+			},
+			{
+				"estilo": 4,
+				"enunciado": "Quando estou aprendendo um assunto novo, eu prefiro",
+				"a": "concentrar-me no assunto, aprendendo o máximo possível.",
+				"b": "tentar estabelecer conexões entre o assunto e outros com ele relacionados."
+			},
+			{
+				"estilo": 1,
+				"enunciado": "Mais provavelmente sou considerado(a)",
+				"a": "expansivo(a).",
+				"b": "reservado(a)."
+			},
+			{
+				"estilo": 2,
+				"enunciado": "Prefiro disciplinas que enfatizam",
+				"a": "material concreto (fatos, dados).",
+				"b": "material abstrato (conceitos, teorias)."
+			},
+			{
+				"estilo": 3,
+				"enunciado": "Para entretenimento, eu prefiro",
+				"a": "assistir televisão.",
+				"b": "ler um livro."
+			},
+			{
+				"estilo": 4,
+				"enunciado": "Alguns professores iniciam suas preleções com um resumo do que irão cobrir. Tais resumos são",
+				"a": "de alguma utilidade para mim.",
+				"b": "muito úteis para mim."
+			},
+			{
+				"estilo": 1,
+				"enunciado": "A idéia de fazer o trabalho de casa em grupo, com a mesma nota para todos do grupo,",
+				"a": "me agrada.",
+				"b": "não me agrada."
+			},
+			{
+				"estilo": 2,
+				"enunciado": "Quando estou fazendo cálculo longos",
+				"a": "tendo a repetir todos os passos e conferir meu trabalho cuidadosamente.",
+				"b": "acho cansativo conferir o meu trabalho e tenho que me esforçar para fazê-lo."
+			},
+			{
+				"estilo": 3,
+				"enunciado": "Tendo a descrever os lugares onde estive",
+				"a": "com facilidade e com bom detalhamento.",
+				"b": "com dificuldade e sem detalhamento."
+			},
+			{
+				"estilo": 4,
+				"enunciado": "Quando estou resolvendo problemas em grupo, mais provavelmente eu",
+				"a": "penso nas etapas do processo de solução.",
+				"b": "penso nas possíveis conseqüências, ou sobre a aplicações da solução para uma ampla faixa de áreas."
+			}
+		]
+	}
+}
