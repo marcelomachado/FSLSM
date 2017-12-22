@@ -88,35 +88,32 @@ if (isset($_SESSION['ID_ALUNO'])) {
             <div id="perguntas">
                 <br>
                 <h4>Escolha "a" ou "b" para indicar sua resposta a cada uma das questões. Se as duas alternativas "a" e "b" se aplicam a você, escolha aquela que é mais frequente. </h4>                           
-                    <!--<form id="questionario" method="post" action="resultado.php"  onsubmit="return validatePage($('.question'))">-->
-                        <form id="questionario" method="post" action="resultado.php">
-                        <?php                    
-                            $questoes = $questionarioArray["estilodeaprendizagem"]["questoes"];
-                            echo '<div class="text-left">';
-                            echo '<ul style="list-style-type:none">';
-                            for($i=0;$i<count($questoes);$i++){
-                                $id_questão = $i + 1;
-                                echo $id_questão.') <font color="red">*</font>'.$questoes[$i]['enunciado'].'<br>';
-                                
-                                echo '<li class="question">';
-                                echo '<div class="radio"><label>';
-                                echo '<input type="radio" value="a" name="questao'.$id_questão.'-'.$questoes[$i]['estilo'].'"/> a) '.$questoes[$i]['a'].'<br>';
-                                echo '</label></div>';
-                                echo '<div class="radio"><label>';
-                                echo '<input type="radio" value="b" name="questao'.$id_questão.'-'.$questoes[$i]['estilo'].'"/> b) '.$questoes[$i]['b'].'<br><br>';
-                                echo '</label></div>';
-                                echo '</li>';
-                                   
-                            }
-                            echo '</ul>';
-                            echo '</div>';                  
-                        ?>
-                        <div class="text-center">
-                            <input id="proxima" type="submit" value="Salvar" class="btn btn-success"/>
-                        </div>
-
-
-                
+                    <form id="questionario" method="post" action="resultado.php"  onsubmit="return validatePage($('.question'))">
+                    <!--<form id="questionario" method="post" action="resultado.php">-->
+                    <?php                    
+                        $questoes = $questionarioArray["estilodeaprendizagem"]["questoes"];
+                        echo '<div class="text-left">';
+                        echo '<ul style="list-style-type:none">';
+                        for($i=0;$i<count($questoes);$i++){
+                            $id_questão = $i + 1;
+                            echo $id_questão.') <font color="red">*</font>'.$questoes[$i]['enunciado'].'<br>';
+                            
+                            echo '<li class="question">';
+                            echo '<div class="radio"><label>';
+                            echo '<input type="radio" value="a" name="questao'.$id_questão.'-'.$questoes[$i]['estilo'].'"/> a) '.$questoes[$i]['a'].'<br>';
+                            echo '</label></div>';
+                            echo '<div class="radio"><label>';
+                            echo '<input type="radio" value="b" name="questao'.$id_questão.'-'.$questoes[$i]['estilo'].'"/> b) '.$questoes[$i]['b'].'<br><br>';
+                            echo '</label></div>';
+                            echo '</li>';
+                               
+                        }
+                        echo '</ul>';
+                        echo '</div>';                  
+                    ?>
+                    <div class="text-center">
+                        <input id="proxima" type="submit" value="Salvar" class="btn btn-success"/>
+                    </div>                
             </div>
             <?php fclose($questionarioJSONFile); ?>
         </div>
