@@ -15,6 +15,15 @@ if (isset($_SESSION['ID_ALUNO'])) {
 }else {
     header('Location: index.php');
 }
+
+if($stmt = $mysqli->prepare("SELECT * FROM `introducao_a_computacao`.`estilo_de_aprendizagem` WHERE id_aluno = ?")){
+    $stmt->bind_param('i', $id_aluno);
+    $stmt->execute();
+    $stmt->store_result();
+    if ($stmt->num_rows == 1) {
+        header('Location: resultado.php?respondido=1');
+    }
+}
 ?>
 <!DOCTYPE html>
 <html style="height: 100%;">
@@ -65,10 +74,7 @@ if (isset($_SESSION['ID_ALUNO'])) {
               </div>
               <div class="modal-body">
                 <div id="instrucoes" class="text-left" style="width: 500px; margin: auto; margin-top: 20px; padding: 12px;height: auto; text-align: justify; background-color: #e6f2ff";>
-                    <p>Ao acessar o sistema você encontrará um questionário relacionado a conceitos que serão tratados no curso de Introdução à Computação.
-                    O objetivo deste questionário é entender melhor o conhecimento prévio dos alunos com relação aos aspectos do curso, possibilitanto a oferta de uma melhor seleção de materiais e conteúdo. É importante que as respostas de fato representem o seu conhecimento, ou seja, caso você não tenha nenhum conhecimento sobre o assunto em questão você não precisa escolher nenhuma das alternativas, bastando apenas não selecionar nenhuma das respostas.</p>
-                    <p style="margin-top: -10px">Não é necessário responder o questionário em um único momento, suas respostas estão sendo gravadas no decorrer do seu progresso no sistema, porém é válido se atentar à data limite, pois neste momento o sistema será retirado do ar. Você pode acompanhar seu progresso a partir das cores que são adicionadas a cada uma das questões: <font color="grey">cinza</font> indica que aquele conceito ainda precisa ser respondido, <font color="green"> verde</font> indica que aquele conceito já foi respondido e <font color="#990"> amarelo</font> indica o conceito atual. Ao final, espera-se que todos os conceitos estejam <font color="green"> verde</font>, mesmo em conceitos que você não marcou nenhuma das alternativas.</p>
-                    <p style="margin-top: -10px"><font color="red">Importante:</font> As respostas de cada conceito são salvas apenas quando você aperta o botão <input type="button" value="Salvar" class="btn btn-success"/> na página de Perguntas. Portanto, não basta apenas informar seu conhecimento prévio, é necessário enviar para aquele conceito ficar da cor verde.</p>
+                    <p>Responda todas as questões do forumulaŕio e pressione o botão de Salvar. Em seguida você terá acesso ao seu resultado.</p>
                 </div>
               </div>
               <div class="modal-footer">
@@ -99,17 +105,38 @@ if (isset($_SESSION['ID_ALUNO'])) {
                             echo $id_questão.') <font color="red">*</font>'.$questoes[$i]['enunciado'].'<br>';
                             
                             echo '<li class="question">';
-                            echo '<div class="radio"><label>';
-                            echo '<input type="radio" value="a" name="questao'.$id_questão.'-'.$questoes[$i]['estilo'].'"/> a) '.$questoes[$i]['a'].'<br>';
-                            echo '</label></div>';
-                            echo '<div class="radio"><label>';
-                            echo '<input type="radio" value="b" name="questao'.$id_questão.'-'.$questoes[$i]['estilo'].'"/> b) '.$questoes[$i]['b'].'<br><br>';
-                            echo '</label></div>';
+                            echo '<div class="radio">';
+                            echo '<label><input type="radio" value="a" name="questao'.$id_questão.'-'.$questoes[$i]['estilo'].'"/> a) '.$questoes[$i]['a'].'<br></label>';
+                            echo '</div>';
+                            echo '<div class="radio">';
+                            echo '<label><input type="radio" value="b" name="questao'.$id_questão.'-'.$questoes[$i]['estilo'].'"/> b) '.$questoes[$i]['b'].'<br><br></label>';
+                            echo '</div>';
                             echo '</li>';
                                
                         }
+                        echo "<hr>";
+                        echo '<font color="red">*</font> Indique o tempo você pretende/pode se dedicar ao curso de Introdução à Computação por semana:<br>';
+                        echo '<li class="question">';
+                        echo '<div class="radio">';
+                        echo '<label><input type="radio" value="a" name="questaotempo"/> a) Até 1 hora<br></label>';
+                        echo '</div>';
+                        echo '<div class="radio">';
+                        echo '<label><input type="radio" value="b" name="questaotempo"/> b) Entre 1 hora e 2 horas<br></label>';
+                        echo '</div>';
+                        echo '<div class="radio">';
+                        echo '<label><input type="radio" value="c" name="questaotempo"/> c) Entre 2 hora e 4 horas<br></label>';
+                        echo '</div>';
+                        echo '<div class="radio">';
+                        echo '<label><input type="radio" value="d" name="questaotempo"/> d) Entre 4 hora e 6 horas<br></label>';
+                        echo '</div>';
+                        
+                        echo '<div class="radio">';
+                        echo '<label><input type="radio" value="e" name="questaotempo"/> e) Mais de 6 horas<br></label>';
+                        echo '</div>';
+                        echo '</li>';
                         echo '</ul>';
-                        echo '</div>';                  
+                        echo '</div>';
+                        echo '</div>';              
                     ?>
                     <div class="text-center">
                         <input id="proxima" type="submit" value="Salvar" class="btn btn-success"/>

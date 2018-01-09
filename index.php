@@ -10,8 +10,18 @@ if (verificaValidadeCampo($matricula) && verificaValidadeCampo($email)) {
         session_start();
         $_SESSION['NOME_ALUNO'] = $aluno['nome_aluno'];
         $_SESSION['ID_ALUNO'] = $aluno['id_aluno'];
-
-        header('Location: questionario.php');
+        $id_aluno = $aluno['id_aluno'];
+        if($stmt = $mysqli->prepare("SELECT * FROM `introducao_a_computacao`.`estilo_de_aprendizagem` WHERE id_aluno = ?")){
+        	$stmt->bind_param('i', $id_aluno);
+	        $stmt->execute();
+	        $stmt->store_result();
+	        if ($stmt->num_rows == 1) {
+	        	header('Location: resultado.php?respondido=1');
+	    	}
+	    	else{       
+		        header('Location: questionario.php');
+		    }
+        } 
          
     } else {
         echo '<script> alert("Dados não encontrado, tente novamente.");</script>';
@@ -50,7 +60,7 @@ if (verificaValidadeCampo($matricula) && verificaValidadeCampo($email)) {
                 </form>
             </div>
             <div id="instrucoes" class="text-left" style="width: 500px; margin: auto; margin-top: 20px; padding: 12px;height: auto; text-align: justify; background-color: #e6f2ff";>
-                     <p>O índice de Estilos de Aprendizagem é um instrumento utilizado para determinar as preferências nas quatro dimensões (ativo/reflexivo, sensorial/intuitivo, visual/verbal e sequência/global) do modelo de estilos de aprendizagem formulado por Richard Felder e Linda K. Silverman.</p>
+                     <p>O índice de Estilos de Aprendizagem é um instrumento utilizado para determinar as preferências nas quatro dimensões (ativo/reflexivo, sensorial/intuitivo, visual/verbal e sequência/global) do modelo formulado por Richard Felder e Linda K. Silverman. A partir do conhecimento do estilo de aprendizagem é possível oferecer conteúdos educacionais mais acertivos a cada aluno</p>
             </div>
         </div>
     </body>
