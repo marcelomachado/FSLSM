@@ -48,7 +48,9 @@ Documentos expositivos incluem ensaios, vídeos, todo tipo de material gráfico 
 #### Misturado
 Relecionada a materiais que misturam os tipos de interatividade ativo e expositivo.
 
-NOTA: ativar links para navegar em documentos de hipertexto não é considerado uma ação produtiva.
+NOTA 1: documentos de hipertextos são aqueles textos que apresentam ancôras (links) que indicam um caminho alternativo da mídia. Portanto, não somente estamos falando de arquivos em html, mas também docs, PDFs, etc.
+
+NOTA 2: ativar links para navegar em documentos de hipertexto não é considerado uma ação produtiva.
 
 #### Exemplos
 documentos ativos (com a ação do aluno):
