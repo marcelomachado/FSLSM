@@ -38,7 +38,7 @@ Um recurso contendo apenas dados numéricos, espaciais, espectrales ou estatíst
 #### Declaração de problema: 
 Um material com descrição dos problemas abordados, suas causas e potenciais soluções.
 
-##### Saiba mais em no apêndice B de [Learning Object Metadata SREB-SCORE Initiative](http://txlor.utsa.edu/docs/SREB_learning_object_metadata.pdf)
+##### Saiba mais no apêndice B de [Learning Object Metadata SREB-SCORE Initiative](http://txlor.utsa.edu/docs/SREB_learning_object_metadata.pdf)
 
 ## 2º Tipo de Interatividade do Objeto de Aprendizagem baseado no LOM :
 Representa o modo de aprendizagem predominante apoiado pelo material didático
